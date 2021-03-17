@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17035"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="NoteTaker_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="OI6-C1-6f2">
+                            <items>
+                                <tableRow identifier="Row" id="Si0-kz-pmG" customClass="NoteSelectRow" customModule="NoteTaker_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="bix-rN-eo4">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" textAlignment="center" id="ohY-QG-sxi"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="textLabel" destination="ohY-QG-sxi" id="JC6-Nt-IM6"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Add new note" id="bQ9-cU-sht">
+                            <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="addButtonTapped" destination="AgC-eL-Hgc" id="4M4-dH-ZhT"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="OI6-C1-6f2" id="vFM-W3-Lhu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="61" y="-10"/>
+        </scene>
+    </scenes>
+</document>

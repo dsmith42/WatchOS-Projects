@@ -1,0 +1,893 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1296DFE92601F65200B7C746 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296DFE82601F65200B7C746 /* AppDelegate.swift */; };
+		1296DFEB2601F65200B7C746 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296DFEA2601F65200B7C746 /* SceneDelegate.swift */; };
+		1296DFED2601F65200B7C746 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296DFEC2601F65200B7C746 /* ViewController.swift */; };
+		1296DFF02601F65200B7C746 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1296DFEE2601F65200B7C746 /* Main.storyboard */; };
+		1296DFF22601F65400B7C746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1296DFF12601F65400B7C746 /* Assets.xcassets */; };
+		1296DFF52601F65400B7C746 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1296DFF32601F65400B7C746 /* LaunchScreen.storyboard */; };
+		1296E0002601F65400B7C746 /* NoteTakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296DFFF2601F65400B7C746 /* NoteTakerTests.swift */; };
+		1296E00B2601F65400B7C746 /* NoteTakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296E00A2601F65400B7C746 /* NoteTakerUITests.swift */; };
+		1296E0102601F65400B7C746 /* NoteTaker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1296E00F2601F65400B7C746 /* NoteTaker WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1296E0162601F65400B7C746 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1296E0142601F65400B7C746 /* Interface.storyboard */; };
+		1296E0182601F65500B7C746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1296E0172601F65500B7C746 /* Assets.xcassets */; };
+		1296E01F2601F65500B7C746 /* NoteTaker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1296E01E2601F65500B7C746 /* NoteTaker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1296E0242601F65500B7C746 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296E0232601F65500B7C746 /* InterfaceController.swift */; };
+		1296E0262601F65500B7C746 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296E0252601F65500B7C746 /* ExtensionDelegate.swift */; };
+		1296E0282601F65500B7C746 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296E0272601F65500B7C746 /* ComplicationController.swift */; };
+		1296E02A2601F65600B7C746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1296E0292601F65600B7C746 /* Assets.xcassets */; };
+		1296E0512601FD3F00B7C746 /* NoteSelectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296E0502601FD3F00B7C746 /* NoteSelectRow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1296DFFC2601F65400B7C746 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1296DFDD2601F65200B7C746 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1296DFE42601F65200B7C746;
+			remoteInfo = NoteTaker;
+		};
+		1296E0072601F65400B7C746 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1296DFDD2601F65200B7C746 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1296DFE42601F65200B7C746;
+			remoteInfo = NoteTaker;
+		};
+		1296E0112601F65400B7C746 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1296DFDD2601F65200B7C746 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1296E00E2601F65400B7C746;
+			remoteInfo = "NoteTaker WatchKit App";
+		};
+		1296E0202601F65500B7C746 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1296DFDD2601F65200B7C746 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1296E01D2601F65500B7C746;
+			remoteInfo = "NoteTaker WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1296E0312601F65600B7C746 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1296E01F2601F65500B7C746 /* NoteTaker WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1296E0352601F65600B7C746 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1296E0102601F65400B7C746 /* NoteTaker WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1296DFE52601F65200B7C746 /* NoteTaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteTaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1296DFE82601F65200B7C746 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1296DFEA2601F65200B7C746 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1296DFEC2601F65200B7C746 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1296DFEF2601F65200B7C746 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1296DFF12601F65400B7C746 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1296DFF42601F65400B7C746 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1296DFF62601F65400B7C746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1296DFFB2601F65400B7C746 /* NoteTakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteTakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1296DFFF2601F65400B7C746 /* NoteTakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTakerTests.swift; sourceTree = "<group>"; };
+		1296E0012601F65400B7C746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1296E0062601F65400B7C746 /* NoteTakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteTakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1296E00A2601F65400B7C746 /* NoteTakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTakerUITests.swift; sourceTree = "<group>"; };
+		1296E00C2601F65400B7C746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1296E00F2601F65400B7C746 /* NoteTaker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NoteTaker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1296E0152601F65400B7C746 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1296E0172601F65500B7C746 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1296E0192601F65500B7C746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1296E01E2601F65500B7C746 /* NoteTaker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NoteTaker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1296E0232601F65500B7C746 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1296E0252601F65500B7C746 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1296E0272601F65500B7C746 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		1296E0292601F65600B7C746 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1296E02B2601F65600B7C746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1296E0502601FD3F00B7C746 /* NoteSelectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSelectRow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1296DFE22601F65200B7C746 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1296DFF82601F65400B7C746 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1296E0032601F65400B7C746 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1296E01B2601F65500B7C746 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1296DFDC2601F65200B7C746 = {
+			isa = PBXGroup;
+			children = (
+				1296DFE72601F65200B7C746 /* NoteTaker */,
+				1296DFFE2601F65400B7C746 /* NoteTakerTests */,
+				1296E0092601F65400B7C746 /* NoteTakerUITests */,
+				1296E0132601F65400B7C746 /* NoteTaker WatchKit App */,
+				1296E0222601F65500B7C746 /* NoteTaker WatchKit Extension */,
+				1296DFE62601F65200B7C746 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1296DFE62601F65200B7C746 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1296DFE52601F65200B7C746 /* NoteTaker.app */,
+				1296DFFB2601F65400B7C746 /* NoteTakerTests.xctest */,
+				1296E0062601F65400B7C746 /* NoteTakerUITests.xctest */,
+				1296E00F2601F65400B7C746 /* NoteTaker WatchKit App.app */,
+				1296E01E2601F65500B7C746 /* NoteTaker WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1296DFE72601F65200B7C746 /* NoteTaker */ = {
+			isa = PBXGroup;
+			children = (
+				1296DFE82601F65200B7C746 /* AppDelegate.swift */,
+				1296DFEA2601F65200B7C746 /* SceneDelegate.swift */,
+				1296DFEC2601F65200B7C746 /* ViewController.swift */,
+				1296DFEE2601F65200B7C746 /* Main.storyboard */,
+				1296DFF12601F65400B7C746 /* Assets.xcassets */,
+				1296DFF32601F65400B7C746 /* LaunchScreen.storyboard */,
+				1296DFF62601F65400B7C746 /* Info.plist */,
+			);
+			path = NoteTaker;
+			sourceTree = "<group>";
+		};
+		1296DFFE2601F65400B7C746 /* NoteTakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1296DFFF2601F65400B7C746 /* NoteTakerTests.swift */,
+				1296E0012601F65400B7C746 /* Info.plist */,
+			);
+			path = NoteTakerTests;
+			sourceTree = "<group>";
+		};
+		1296E0092601F65400B7C746 /* NoteTakerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1296E00A2601F65400B7C746 /* NoteTakerUITests.swift */,
+				1296E00C2601F65400B7C746 /* Info.plist */,
+			);
+			path = NoteTakerUITests;
+			sourceTree = "<group>";
+		};
+		1296E0132601F65400B7C746 /* NoteTaker WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				1296E0142601F65400B7C746 /* Interface.storyboard */,
+				1296E0172601F65500B7C746 /* Assets.xcassets */,
+				1296E0192601F65500B7C746 /* Info.plist */,
+			);
+			path = "NoteTaker WatchKit App";
+			sourceTree = "<group>";
+		};
+		1296E0222601F65500B7C746 /* NoteTaker WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1296E0232601F65500B7C746 /* InterfaceController.swift */,
+				1296E0252601F65500B7C746 /* ExtensionDelegate.swift */,
+				1296E0272601F65500B7C746 /* ComplicationController.swift */,
+				1296E0292601F65600B7C746 /* Assets.xcassets */,
+				1296E02B2601F65600B7C746 /* Info.plist */,
+				1296E0502601FD3F00B7C746 /* NoteSelectRow.swift */,
+			);
+			path = "NoteTaker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1296DFE42601F65200B7C746 /* NoteTaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1296E0362601F65600B7C746 /* Build configuration list for PBXNativeTarget "NoteTaker" */;
+			buildPhases = (
+				1296DFE12601F65200B7C746 /* Sources */,
+				1296DFE22601F65200B7C746 /* Frameworks */,
+				1296DFE32601F65200B7C746 /* Resources */,
+				1296E0352601F65600B7C746 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1296E0122601F65400B7C746 /* PBXTargetDependency */,
+			);
+			name = NoteTaker;
+			productName = NoteTaker;
+			productReference = 1296DFE52601F65200B7C746 /* NoteTaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1296DFFA2601F65400B7C746 /* NoteTakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1296E0392601F65600B7C746 /* Build configuration list for PBXNativeTarget "NoteTakerTests" */;
+			buildPhases = (
+				1296DFF72601F65400B7C746 /* Sources */,
+				1296DFF82601F65400B7C746 /* Frameworks */,
+				1296DFF92601F65400B7C746 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1296DFFD2601F65400B7C746 /* PBXTargetDependency */,
+			);
+			name = NoteTakerTests;
+			productName = NoteTakerTests;
+			productReference = 1296DFFB2601F65400B7C746 /* NoteTakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1296E0052601F65400B7C746 /* NoteTakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1296E03C2601F65600B7C746 /* Build configuration list for PBXNativeTarget "NoteTakerUITests" */;
+			buildPhases = (
+				1296E0022601F65400B7C746 /* Sources */,
+				1296E0032601F65400B7C746 /* Frameworks */,
+				1296E0042601F65400B7C746 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1296E0082601F65400B7C746 /* PBXTargetDependency */,
+			);
+			name = NoteTakerUITests;
+			productName = NoteTakerUITests;
+			productReference = 1296E0062601F65400B7C746 /* NoteTakerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1296E00E2601F65400B7C746 /* NoteTaker WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1296E0322601F65600B7C746 /* Build configuration list for PBXNativeTarget "NoteTaker WatchKit App" */;
+			buildPhases = (
+				1296E00D2601F65400B7C746 /* Resources */,
+				1296E0312601F65600B7C746 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1296E0212601F65500B7C746 /* PBXTargetDependency */,
+			);
+			name = "NoteTaker WatchKit App";
+			productName = "NoteTaker WatchKit App";
+			productReference = 1296E00F2601F65400B7C746 /* NoteTaker WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1296E01D2601F65500B7C746 /* NoteTaker WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1296E02E2601F65600B7C746 /* Build configuration list for PBXNativeTarget "NoteTaker WatchKit Extension" */;
+			buildPhases = (
+				1296E01A2601F65500B7C746 /* Sources */,
+				1296E01B2601F65500B7C746 /* Frameworks */,
+				1296E01C2601F65500B7C746 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NoteTaker WatchKit Extension";
+			productName = "NoteTaker WatchKit Extension";
+			productReference = 1296E01E2601F65500B7C746 /* NoteTaker WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1296DFDD2601F65200B7C746 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					1296DFE42601F65200B7C746 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					1296DFFA2601F65400B7C746 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 1296DFE42601F65200B7C746;
+					};
+					1296E0052601F65400B7C746 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 1296DFE42601F65200B7C746;
+					};
+					1296E00E2601F65400B7C746 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					1296E01D2601F65500B7C746 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 1296DFE02601F65200B7C746 /* Build configuration list for PBXProject "NoteTaker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1296DFDC2601F65200B7C746;
+			productRefGroup = 1296DFE62601F65200B7C746 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1296DFE42601F65200B7C746 /* NoteTaker */,
+				1296DFFA2601F65400B7C746 /* NoteTakerTests */,
+				1296E0052601F65400B7C746 /* NoteTakerUITests */,
+				1296E00E2601F65400B7C746 /* NoteTaker WatchKit App */,
+				1296E01D2601F65500B7C746 /* NoteTaker WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1296DFE32601F65200B7C746 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1296DFF52601F65400B7C746 /* LaunchScreen.storyboard in Resources */,
+				1296DFF22601F65400B7C746 /* Assets.xcassets in Resources */,
+				1296DFF02601F65200B7C746 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1296DFF92601F65400B7C746 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1296E0042601F65400B7C746 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1296E00D2601F65400B7C746 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1296E0182601F65500B7C746 /* Assets.xcassets in Resources */,
+				1296E0162601F65400B7C746 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1296E01C2601F65500B7C746 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1296E02A2601F65600B7C746 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1296DFE12601F65200B7C746 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1296DFED2601F65200B7C746 /* ViewController.swift in Sources */,
+				1296DFE92601F65200B7C746 /* AppDelegate.swift in Sources */,
+				1296DFEB2601F65200B7C746 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1296DFF72601F65400B7C746 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1296E0002601F65400B7C746 /* NoteTakerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1296E0022601F65400B7C746 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1296E00B2601F65400B7C746 /* NoteTakerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1296E01A2601F65500B7C746 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1296E0512601FD3F00B7C746 /* NoteSelectRow.swift in Sources */,
+				1296E0262601F65500B7C746 /* ExtensionDelegate.swift in Sources */,
+				1296E0242601F65500B7C746 /* InterfaceController.swift in Sources */,
+				1296E0282601F65500B7C746 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1296DFFD2601F65400B7C746 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1296DFE42601F65200B7C746 /* NoteTaker */;
+			targetProxy = 1296DFFC2601F65400B7C746 /* PBXContainerItemProxy */;
+		};
+		1296E0082601F65400B7C746 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1296DFE42601F65200B7C746 /* NoteTaker */;
+			targetProxy = 1296E0072601F65400B7C746 /* PBXContainerItemProxy */;
+		};
+		1296E0122601F65400B7C746 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1296E00E2601F65400B7C746 /* NoteTaker WatchKit App */;
+			targetProxy = 1296E0112601F65400B7C746 /* PBXContainerItemProxy */;
+		};
+		1296E0212601F65500B7C746 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1296E01D2601F65500B7C746 /* NoteTaker WatchKit Extension */;
+			targetProxy = 1296E0202601F65500B7C746 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1296DFEE2601F65200B7C746 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1296DFEF2601F65200B7C746 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1296DFF32601F65400B7C746 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1296DFF42601F65400B7C746 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1296E0142601F65400B7C746 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1296E0152601F65400B7C746 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1296E02C2601F65600B7C746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1296E02D2601F65600B7C746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1296E02F2601F65600B7C746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WH6238UZNB;
+				INFOPLIST_FILE = "NoteTaker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.NoteTaker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		1296E0302601F65600B7C746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WH6238UZNB;
+				INFOPLIST_FILE = "NoteTaker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.NoteTaker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		1296E0332601F65600B7C746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WH6238UZNB;
+				IBSC_MODULE = NoteTaker_WatchKit_Extension;
+				INFOPLIST_FILE = "NoteTaker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.NoteTaker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		1296E0342601F65600B7C746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WH6238UZNB;
+				IBSC_MODULE = NoteTaker_WatchKit_Extension;
+				INFOPLIST_FILE = "NoteTaker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.NoteTaker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		1296E0372601F65600B7C746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WH6238UZNB;
+				INFOPLIST_FILE = NoteTaker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.NoteTaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1296E0382601F65600B7C746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WH6238UZNB;
+				INFOPLIST_FILE = NoteTaker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.NoteTaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1296E03A2601F65600B7C746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WH6238UZNB;
+				INFOPLIST_FILE = NoteTakerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.NoteTakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteTaker.app/NoteTaker";
+			};
+			name = Debug;
+		};
+		1296E03B2601F65600B7C746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WH6238UZNB;
+				INFOPLIST_FILE = NoteTakerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.NoteTakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteTaker.app/NoteTaker";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1296E03D2601F65600B7C746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WH6238UZNB;
+				INFOPLIST_FILE = NoteTakerUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.NoteTakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NoteTaker;
+			};
+			name = Debug;
+		};
+		1296E03E2601F65600B7C746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WH6238UZNB;
+				INFOPLIST_FILE = NoteTakerUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.NoteTakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NoteTaker;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1296DFE02601F65200B7C746 /* Build configuration list for PBXProject "NoteTaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1296E02C2601F65600B7C746 /* Debug */,
+				1296E02D2601F65600B7C746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1296E02E2601F65600B7C746 /* Build configuration list for PBXNativeTarget "NoteTaker WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1296E02F2601F65600B7C746 /* Debug */,
+				1296E0302601F65600B7C746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1296E0322601F65600B7C746 /* Build configuration list for PBXNativeTarget "NoteTaker WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1296E0332601F65600B7C746 /* Debug */,
+				1296E0342601F65600B7C746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1296E0362601F65600B7C746 /* Build configuration list for PBXNativeTarget "NoteTaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1296E0372601F65600B7C746 /* Debug */,
+				1296E0382601F65600B7C746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1296E0392601F65600B7C746 /* Build configuration list for PBXNativeTarget "NoteTakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1296E03A2601F65600B7C746 /* Debug */,
+				1296E03B2601F65600B7C746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1296E03C2601F65600B7C746 /* Build configuration list for PBXNativeTarget "NoteTakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1296E03D2601F65600B7C746 /* Debug */,
+				1296E03E2601F65600B7C746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1296DFDD2601F65200B7C746 /* Project object */;
+}
