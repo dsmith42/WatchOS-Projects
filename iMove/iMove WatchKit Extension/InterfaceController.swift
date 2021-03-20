@@ -7,14 +7,31 @@
 
 import WatchKit
 import Foundation
-
+import HealthKit
 
 class InterfaceController: WKInterfaceController {
 
 	@IBOutlet var activityType: WKInterfacePicker!
 
+	let activites: [(String, HKWorkoutActivityType)] = [
+		("Walking", .walking),
+		("Cycling", .cycling),
+		("Runnning", .running),
+		("Swimming", .swimming)
+	]
+
+	var selectedActivity = HKWorkoutActivityType.walking
+
 	override func awake(withContext context: Any?) {
-		// Configure interface objects here.
+		var items = [WKPickerItem]()
+
+		for activiy in activites {
+			let item = WKPickerItem()
+			item.title = activiy.0
+			items.append(item)
+		}
+
+		activityType.setItems(items)
 	}
 
 	override func willActivate() {
@@ -26,9 +43,13 @@ class InterfaceController: WKInterfaceController {
 	}
 
 	@IBAction func activityPickerChanged(_ value: Int) {
+		selectedActivity = activites[value].1
 	}
 	
 	@IBAction func startWorkoutTapped() {
+		guard HKHealthStore.isHealthDataAvailable() else { return	}
+
+		WKInterfaceController.reloadRootControllers(withNames: ["WorkoutInterfaceControler"], contexts: [selectedActivity])
 	}
 	
 }
