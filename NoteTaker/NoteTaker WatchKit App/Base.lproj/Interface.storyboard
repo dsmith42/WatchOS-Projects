@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17035"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -11,7 +11,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="NoteTaker_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <table alignment="left" id="OI6-C1-6f2">
+                        <table alignment="left" pagingScroll="YES" id="OI6-C1-6f2">
                             <items>
                                 <tableRow identifier="Row" id="Si0-kz-pmG" customClass="NoteSelectRow" customModule="NoteTaker_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="bix-rN-eo4">
@@ -21,6 +21,7 @@
                                     </group>
                                     <connections>
                                         <outlet property="textLabel" destination="ohY-QG-sxi" id="JC6-Nt-IM6"/>
+                                        <segue destination="Pmd-ol-05O" kind="push" id="gyW-Na-3cJ"/>
                                     </connections>
                                 </tableRow>
                             </items>
@@ -38,6 +39,20 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="61" y="-10"/>
+        </scene>
+        <!--Detail Interface Controller-->
+        <scene sceneID="8FW-0S-rQ1">
+            <objects>
+                <controller id="Pmd-ol-05O" customClass="DetailInterfaceController" customModule="NoteTaker_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Label" numberOfLines="0" id="azZ-hc-m2D"/>
+                    </items>
+                    <connections>
+                        <outlet property="textLabel" destination="azZ-hc-m2D" id="mtR-Zn-cUN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="334" y="-14"/>
         </scene>
     </scenes>
 </document>

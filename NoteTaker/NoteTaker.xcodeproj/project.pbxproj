@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		125502582605E8BA0031028F /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125502572605E8BA0031028F /* DetailInterfaceController.swift */; };
 		1296DFE92601F65200B7C746 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296DFE82601F65200B7C746 /* AppDelegate.swift */; };
 		1296DFEB2601F65200B7C746 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296DFEA2601F65200B7C746 /* SceneDelegate.swift */; };
 		1296DFED2601F65200B7C746 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296DFEC2601F65200B7C746 /* ViewController.swift */; };
@@ -83,6 +84,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		125502572605E8BA0031028F /* DetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
 		1296DFE52601F65200B7C746 /* NoteTaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteTaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1296DFE82601F65200B7C746 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1296DFEA2601F65200B7C746 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				1296E0292601F65600B7C746 /* Assets.xcassets */,
 				1296E02B2601F65600B7C746 /* Info.plist */,
 				1296E0502601FD3F00B7C746 /* NoteSelectRow.swift */,
+				125502572605E8BA0031028F /* DetailInterfaceController.swift */,
 			);
 			path = "NoteTaker WatchKit Extension";
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				1296E0262601F65500B7C746 /* ExtensionDelegate.swift in Sources */,
 				1296E0242601F65500B7C746 /* InterfaceController.swift in Sources */,
 				1296E0282601F65500B7C746 /* ComplicationController.swift in Sources */,
+				125502582605E8BA0031028F /* DetailInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,7 +618,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WH6238UZNB;
+				DEVELOPMENT_TEAM = X6M775UK8W;
 				INFOPLIST_FILE = "NoteTaker WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -636,7 +640,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WH6238UZNB;
+				DEVELOPMENT_TEAM = X6M775UK8W;
 				INFOPLIST_FILE = "NoteTaker WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -661,7 +665,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WH6238UZNB;
+				DEVELOPMENT_TEAM = X6M775UK8W;
 				IBSC_MODULE = NoteTaker_WatchKit_Extension;
 				INFOPLIST_FILE = "NoteTaker WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.NoteTaker.watchkitapp;
@@ -681,7 +685,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WH6238UZNB;
+				DEVELOPMENT_TEAM = X6M775UK8W;
 				IBSC_MODULE = NoteTaker_WatchKit_Extension;
 				INFOPLIST_FILE = "NoteTaker WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.NoteTaker.watchkitapp;
@@ -700,8 +704,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WH6238UZNB;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = X6M775UK8W;
 				INFOPLIST_FILE = NoteTaker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -710,6 +715,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.NoteTaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "DS Wildcard";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -721,8 +727,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WH6238UZNB;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = X6M775UK8W;
 				INFOPLIST_FILE = NoteTaker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -731,6 +738,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.NoteTaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "DS Wildcard";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
