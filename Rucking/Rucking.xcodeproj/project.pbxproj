@@ -1,0 +1,895 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1255026B2605EFF50031028F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1255026A2605EFF50031028F /* AppDelegate.swift */; };
+		1255026D2605EFF50031028F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1255026C2605EFF50031028F /* SceneDelegate.swift */; };
+		1255026F2605EFF50031028F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1255026E2605EFF50031028F /* ViewController.swift */; };
+		125502722605EFF50031028F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125502702605EFF50031028F /* Main.storyboard */; };
+		125502742605EFF70031028F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 125502732605EFF70031028F /* Assets.xcassets */; };
+		125502772605EFF70031028F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125502752605EFF70031028F /* LaunchScreen.storyboard */; };
+		125502822605EFF70031028F /* RuckingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125502812605EFF70031028F /* RuckingTests.swift */; };
+		1255028D2605EFF70031028F /* RuckingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1255028C2605EFF70031028F /* RuckingUITests.swift */; };
+		125502922605EFF70031028F /* Rucking WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 125502912605EFF70031028F /* Rucking WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		125502982605EFF70031028F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125502962605EFF70031028F /* Interface.storyboard */; };
+		1255029A2605EFF80031028F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 125502992605EFF80031028F /* Assets.xcassets */; };
+		125502A12605EFF80031028F /* Rucking WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 125502A02605EFF80031028F /* Rucking WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		125502A62605EFF80031028F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125502A52605EFF80031028F /* InterfaceController.swift */; };
+		125502A82605EFF80031028F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125502A72605EFF80031028F /* ExtensionDelegate.swift */; };
+		125502AA2605EFF80031028F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125502A92605EFF80031028F /* NotificationController.swift */; };
+		125502AC2605EFF80031028F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125502AB2605EFF80031028F /* ComplicationController.swift */; };
+		125502AE2605EFF90031028F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 125502AD2605EFF90031028F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1255027E2605EFF70031028F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1255025F2605EFF50031028F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 125502662605EFF50031028F;
+			remoteInfo = Rucking;
+		};
+		125502892605EFF70031028F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1255025F2605EFF50031028F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 125502662605EFF50031028F;
+			remoteInfo = Rucking;
+		};
+		125502932605EFF70031028F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1255025F2605EFF50031028F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 125502902605EFF70031028F;
+			remoteInfo = "Rucking WatchKit App";
+		};
+		125502A22605EFF80031028F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1255025F2605EFF50031028F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1255029F2605EFF80031028F;
+			remoteInfo = "Rucking WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		125502B62605EFF90031028F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				125502A12605EFF80031028F /* Rucking WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		125502BA2605EFF90031028F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				125502922605EFF70031028F /* Rucking WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		125502672605EFF50031028F /* Rucking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rucking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1255026A2605EFF50031028F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1255026C2605EFF50031028F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1255026E2605EFF50031028F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		125502712605EFF50031028F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		125502732605EFF70031028F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		125502762605EFF70031028F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		125502782605EFF70031028F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1255027D2605EFF70031028F /* RuckingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuckingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		125502812605EFF70031028F /* RuckingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuckingTests.swift; sourceTree = "<group>"; };
+		125502832605EFF70031028F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		125502882605EFF70031028F /* RuckingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuckingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1255028C2605EFF70031028F /* RuckingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuckingUITests.swift; sourceTree = "<group>"; };
+		1255028E2605EFF70031028F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		125502912605EFF70031028F /* Rucking WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rucking WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		125502972605EFF70031028F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		125502992605EFF80031028F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1255029B2605EFF80031028F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		125502A02605EFF80031028F /* Rucking WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Rucking WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		125502A52605EFF80031028F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		125502A72605EFF80031028F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		125502A92605EFF80031028F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		125502AB2605EFF80031028F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		125502AD2605EFF90031028F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		125502AF2605EFF90031028F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		125502B02605EFF90031028F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		125502642605EFF50031028F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1255027A2605EFF70031028F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		125502852605EFF70031028F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1255029D2605EFF80031028F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1255025E2605EFF50031028F = {
+			isa = PBXGroup;
+			children = (
+				125502692605EFF50031028F /* Rucking */,
+				125502802605EFF70031028F /* RuckingTests */,
+				1255028B2605EFF70031028F /* RuckingUITests */,
+				125502952605EFF70031028F /* Rucking WatchKit App */,
+				125502A42605EFF80031028F /* Rucking WatchKit Extension */,
+				125502682605EFF50031028F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		125502682605EFF50031028F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				125502672605EFF50031028F /* Rucking.app */,
+				1255027D2605EFF70031028F /* RuckingTests.xctest */,
+				125502882605EFF70031028F /* RuckingUITests.xctest */,
+				125502912605EFF70031028F /* Rucking WatchKit App.app */,
+				125502A02605EFF80031028F /* Rucking WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		125502692605EFF50031028F /* Rucking */ = {
+			isa = PBXGroup;
+			children = (
+				1255026A2605EFF50031028F /* AppDelegate.swift */,
+				1255026C2605EFF50031028F /* SceneDelegate.swift */,
+				1255026E2605EFF50031028F /* ViewController.swift */,
+				125502702605EFF50031028F /* Main.storyboard */,
+				125502732605EFF70031028F /* Assets.xcassets */,
+				125502752605EFF70031028F /* LaunchScreen.storyboard */,
+				125502782605EFF70031028F /* Info.plist */,
+			);
+			path = Rucking;
+			sourceTree = "<group>";
+		};
+		125502802605EFF70031028F /* RuckingTests */ = {
+			isa = PBXGroup;
+			children = (
+				125502812605EFF70031028F /* RuckingTests.swift */,
+				125502832605EFF70031028F /* Info.plist */,
+			);
+			path = RuckingTests;
+			sourceTree = "<group>";
+		};
+		1255028B2605EFF70031028F /* RuckingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1255028C2605EFF70031028F /* RuckingUITests.swift */,
+				1255028E2605EFF70031028F /* Info.plist */,
+			);
+			path = RuckingUITests;
+			sourceTree = "<group>";
+		};
+		125502952605EFF70031028F /* Rucking WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				125502962605EFF70031028F /* Interface.storyboard */,
+				125502992605EFF80031028F /* Assets.xcassets */,
+				1255029B2605EFF80031028F /* Info.plist */,
+			);
+			path = "Rucking WatchKit App";
+			sourceTree = "<group>";
+		};
+		125502A42605EFF80031028F /* Rucking WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				125502A52605EFF80031028F /* InterfaceController.swift */,
+				125502A72605EFF80031028F /* ExtensionDelegate.swift */,
+				125502A92605EFF80031028F /* NotificationController.swift */,
+				125502AB2605EFF80031028F /* ComplicationController.swift */,
+				125502AD2605EFF90031028F /* Assets.xcassets */,
+				125502AF2605EFF90031028F /* Info.plist */,
+				125502B02605EFF90031028F /* PushNotificationPayload.apns */,
+			);
+			path = "Rucking WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		125502662605EFF50031028F /* Rucking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 125502BB2605EFF90031028F /* Build configuration list for PBXNativeTarget "Rucking" */;
+			buildPhases = (
+				125502632605EFF50031028F /* Sources */,
+				125502642605EFF50031028F /* Frameworks */,
+				125502652605EFF50031028F /* Resources */,
+				125502BA2605EFF90031028F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				125502942605EFF70031028F /* PBXTargetDependency */,
+			);
+			name = Rucking;
+			productName = Rucking;
+			productReference = 125502672605EFF50031028F /* Rucking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1255027C2605EFF70031028F /* RuckingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 125502BE2605EFF90031028F /* Build configuration list for PBXNativeTarget "RuckingTests" */;
+			buildPhases = (
+				125502792605EFF70031028F /* Sources */,
+				1255027A2605EFF70031028F /* Frameworks */,
+				1255027B2605EFF70031028F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1255027F2605EFF70031028F /* PBXTargetDependency */,
+			);
+			name = RuckingTests;
+			productName = RuckingTests;
+			productReference = 1255027D2605EFF70031028F /* RuckingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		125502872605EFF70031028F /* RuckingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 125502C12605EFF90031028F /* Build configuration list for PBXNativeTarget "RuckingUITests" */;
+			buildPhases = (
+				125502842605EFF70031028F /* Sources */,
+				125502852605EFF70031028F /* Frameworks */,
+				125502862605EFF70031028F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1255028A2605EFF70031028F /* PBXTargetDependency */,
+			);
+			name = RuckingUITests;
+			productName = RuckingUITests;
+			productReference = 125502882605EFF70031028F /* RuckingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		125502902605EFF70031028F /* Rucking WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 125502B72605EFF90031028F /* Build configuration list for PBXNativeTarget "Rucking WatchKit App" */;
+			buildPhases = (
+				1255028F2605EFF70031028F /* Resources */,
+				125502B62605EFF90031028F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				125502A32605EFF80031028F /* PBXTargetDependency */,
+			);
+			name = "Rucking WatchKit App";
+			productName = "Rucking WatchKit App";
+			productReference = 125502912605EFF70031028F /* Rucking WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1255029F2605EFF80031028F /* Rucking WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 125502B32605EFF90031028F /* Build configuration list for PBXNativeTarget "Rucking WatchKit Extension" */;
+			buildPhases = (
+				1255029C2605EFF80031028F /* Sources */,
+				1255029D2605EFF80031028F /* Frameworks */,
+				1255029E2605EFF80031028F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rucking WatchKit Extension";
+			productName = "Rucking WatchKit Extension";
+			productReference = 125502A02605EFF80031028F /* Rucking WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1255025F2605EFF50031028F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					125502662605EFF50031028F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					1255027C2605EFF70031028F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 125502662605EFF50031028F;
+					};
+					125502872605EFF70031028F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 125502662605EFF50031028F;
+					};
+					125502902605EFF70031028F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					1255029F2605EFF80031028F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 125502622605EFF50031028F /* Build configuration list for PBXProject "Rucking" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1255025E2605EFF50031028F;
+			productRefGroup = 125502682605EFF50031028F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				125502662605EFF50031028F /* Rucking */,
+				1255027C2605EFF70031028F /* RuckingTests */,
+				125502872605EFF70031028F /* RuckingUITests */,
+				125502902605EFF70031028F /* Rucking WatchKit App */,
+				1255029F2605EFF80031028F /* Rucking WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		125502652605EFF50031028F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125502772605EFF70031028F /* LaunchScreen.storyboard in Resources */,
+				125502742605EFF70031028F /* Assets.xcassets in Resources */,
+				125502722605EFF50031028F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1255027B2605EFF70031028F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		125502862605EFF70031028F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1255028F2605EFF70031028F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1255029A2605EFF80031028F /* Assets.xcassets in Resources */,
+				125502982605EFF70031028F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1255029E2605EFF80031028F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125502AE2605EFF90031028F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		125502632605EFF50031028F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1255026F2605EFF50031028F /* ViewController.swift in Sources */,
+				1255026B2605EFF50031028F /* AppDelegate.swift in Sources */,
+				1255026D2605EFF50031028F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		125502792605EFF70031028F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125502822605EFF70031028F /* RuckingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		125502842605EFF70031028F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1255028D2605EFF70031028F /* RuckingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1255029C2605EFF80031028F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125502AA2605EFF80031028F /* NotificationController.swift in Sources */,
+				125502AC2605EFF80031028F /* ComplicationController.swift in Sources */,
+				125502A82605EFF80031028F /* ExtensionDelegate.swift in Sources */,
+				125502A62605EFF80031028F /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1255027F2605EFF70031028F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 125502662605EFF50031028F /* Rucking */;
+			targetProxy = 1255027E2605EFF70031028F /* PBXContainerItemProxy */;
+		};
+		1255028A2605EFF70031028F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 125502662605EFF50031028F /* Rucking */;
+			targetProxy = 125502892605EFF70031028F /* PBXContainerItemProxy */;
+		};
+		125502942605EFF70031028F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 125502902605EFF70031028F /* Rucking WatchKit App */;
+			targetProxy = 125502932605EFF70031028F /* PBXContainerItemProxy */;
+		};
+		125502A32605EFF80031028F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1255029F2605EFF80031028F /* Rucking WatchKit Extension */;
+			targetProxy = 125502A22605EFF80031028F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		125502702605EFF50031028F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				125502712605EFF50031028F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		125502752605EFF70031028F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				125502762605EFF70031028F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		125502962605EFF70031028F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				125502972605EFF70031028F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		125502B12605EFF90031028F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		125502B22605EFF90031028F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		125502B42605EFF90031028F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6M775UK8W;
+				INFOPLIST_FILE = "Rucking WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.Rucking.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		125502B52605EFF90031028F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6M775UK8W;
+				INFOPLIST_FILE = "Rucking WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.Rucking.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		125502B82605EFF90031028F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6M775UK8W;
+				IBSC_MODULE = Rucking_WatchKit_Extension;
+				INFOPLIST_FILE = "Rucking WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.Rucking.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		125502B92605EFF90031028F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6M775UK8W;
+				IBSC_MODULE = Rucking_WatchKit_Extension;
+				INFOPLIST_FILE = "Rucking WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.Rucking.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		125502BC2605EFF90031028F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6M775UK8W;
+				INFOPLIST_FILE = Rucking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.Rucking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		125502BD2605EFF90031028F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6M775UK8W;
+				INFOPLIST_FILE = Rucking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.Rucking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		125502BF2605EFF90031028F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6M775UK8W;
+				INFOPLIST_FILE = RuckingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.RuckingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rucking.app/Rucking";
+			};
+			name = Debug;
+		};
+		125502C02605EFF90031028F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6M775UK8W;
+				INFOPLIST_FILE = RuckingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.RuckingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rucking.app/Rucking";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		125502C22605EFF90031028F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6M775UK8W;
+				INFOPLIST_FILE = RuckingUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.RuckingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rucking;
+			};
+			name = Debug;
+		};
+		125502C32605EFF90031028F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6M775UK8W;
+				INFOPLIST_FILE = RuckingUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.RuckingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rucking;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		125502622605EFF50031028F /* Build configuration list for PBXProject "Rucking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125502B12605EFF90031028F /* Debug */,
+				125502B22605EFF90031028F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		125502B32605EFF90031028F /* Build configuration list for PBXNativeTarget "Rucking WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125502B42605EFF90031028F /* Debug */,
+				125502B52605EFF90031028F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		125502B72605EFF90031028F /* Build configuration list for PBXNativeTarget "Rucking WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125502B82605EFF90031028F /* Debug */,
+				125502B92605EFF90031028F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		125502BB2605EFF90031028F /* Build configuration list for PBXNativeTarget "Rucking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125502BC2605EFF90031028F /* Debug */,
+				125502BD2605EFF90031028F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		125502BE2605EFF90031028F /* Build configuration list for PBXNativeTarget "RuckingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125502BF2605EFF90031028F /* Debug */,
+				125502C02605EFF90031028F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		125502C12605EFF90031028F /* Build configuration list for PBXNativeTarget "RuckingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125502C22605EFF90031028F /* Debug */,
+				125502C32605EFF90031028F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1255025F2605EFF50031028F /* Project object */;
+}
