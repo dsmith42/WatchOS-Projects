@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchReactions_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.5" alignment="left" id="exn-Ax-pL5">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="1" id="dyQ-zI-wTQ">
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="34"/>
+                                    <connections>
+                                        <action selector="playSound1" destination="AgC-eL-Hgc" id="d8V-H8-vMj"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="2" id="LJz-J3-qYh">
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="34"/>
+                                    <connections>
+                                        <action selector="playSound2" destination="AgC-eL-Hgc" id="a1y-U5-7kv"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.5" alignment="left" id="n3r-Fe-IYz">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="3" id="l2M-ea-D5D">
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="34"/>
+                                    <connections>
+                                        <action selector="playSound3" destination="AgC-eL-Hgc" id="Y8Y-ct-cLK"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="4" id="VAQ-LB-Xaw">
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="34"/>
+                                    <connections>
+                                        <action selector="playSound4" destination="AgC-eL-Hgc" id="xd1-z3-UPk"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <segue destination="hSx-j1-wV4" kind="relationship" relationship="nextPage" id="cgi-C4-nKd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="60" y="-11"/>
+        </scene>
+        <!--TableInterfaceController-->
+        <scene sceneID="gYw-Q2-ujW">
+            <objects>
+                <controller identifier="TableInterfaceController" id="hSx-j1-wV4" customClass="TableInterfaceController" customModule="WatchReactions_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="yMq-K1-nPy">
+                            <items>
+                                <tableRow identifier="Row" id="oIh-pG-EET" customClass="SoundRow" customModule="WatchReactions_WatchKit_App" customModuleProvider="target">
+                                    <group key="rootItem" width="1" alignment="left" id="yXd-zb-qKK">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="4QD-pd-5bF"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="textLabel" destination="4QD-pd-5bF" id="UDH-pu-dbZ"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="yMq-K1-nPy" id="n11-BW-DhY"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="304" y="-11"/>
+        </scene>
+    </scenes>
+</document>
