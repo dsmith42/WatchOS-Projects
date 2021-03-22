@@ -6,10 +6,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--InterfaceController-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="iMove_WatchKit_App" customModuleProvider="target">
+                <controller identifier="InterfaceController" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="iMove_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Activity Type" id="RPf-z8-oXd"/>
                         <picker height="42" alignment="left" id="yam-ur-PI7">
@@ -17,7 +17,9 @@
                                 <action selector="activityPickerChanged:" destination="AgC-eL-Hgc" id="7Dg-A9-WMX"/>
                             </connections>
                         </picker>
-                        <button width="1" alignment="left" title="Start Workout" id="Dhr-bK-Ifw">
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Start Workout" id="Dhr-bK-Ifw">
+                            <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
                             <connections>
                                 <action selector="startWorkoutTapped" destination="AgC-eL-Hgc" id="6PE-JM-NDv"/>
                             </connections>
@@ -25,7 +27,6 @@
                     </items>
                     <connections>
                         <outlet property="activityType" destination="yam-ur-PI7" id="ZVx-xq-C9c"/>
-                        <outlet property="picker" destination="yam-ur-PI7" id="9O3-r2-TOY"/>
                     </connections>
                 </controller>
             </objects>
@@ -51,17 +52,21 @@
                                 <action selector="changeDisplayMode" destination="uRp-b5-IP1" id="6db-Hw-xXl"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Stop" id="OkB-Nh-c0n">
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Stop" id="OkB-Nh-c0n" colorLabel="IBBuiltInLabel-Red">
+                            <color key="backgroundColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
                             <connections>
                                 <action selector="stopWorkout" destination="uRp-b5-IP1" id="XFe-XH-xEo"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" verticalAlignment="bottom" hidden="YES" title="Resume" id="RZf-m0-XOh">
+                            <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="resumeWorkout" destination="uRp-b5-IP1" id="eo3-KH-ULs"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" verticalAlignment="bottom" hidden="YES" title="End" id="SSb-SN-E9m">
+                            <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="endWorkout" destination="uRp-b5-IP1" id="8t3-yT-dsP"/>
                             </connections>

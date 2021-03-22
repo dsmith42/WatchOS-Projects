@@ -49,7 +49,7 @@ class InterfaceController: WKInterfaceController {
 	@IBAction func startWorkoutTapped() {
 		guard HKHealthStore.isHealthDataAvailable() else { return	}
 
-		WKInterfaceController.reloadRootControllers(withNames: ["WorkoutInterfaceControler"], contexts: [selectedActivity])
+		WKInterfaceController.reloadRootPageControllers(withNames: ["WorkoutInterfaceController"], contexts: [selectedActivity], orientation: .horizontal, pageIndex: 0)
 	}
 	
 }

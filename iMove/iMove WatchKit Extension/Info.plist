@@ -36,5 +36,9 @@
 	<string>$(PRODUCT_MODULE_NAME).ExtensionDelegate</string>
 	<key>WKRunsIndependentlyOfCompanionApp</key>
 	<true/>
+	<key>NSHealthShareUsageDescription</key>
+	<string>We need to connect to HealthKit to save workouts</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>We need to connect to HealthKit to read workout data.</string>
 </dict>
 </plist>

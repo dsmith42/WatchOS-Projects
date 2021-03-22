@@ -22,6 +22,8 @@
 		1255030B2605F1D50031028F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1255030A2605F1D50031028F /* ComplicationController.swift */; };
 		1255030D2605F1D50031028F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1255030C2605F1D50031028F /* Assets.xcassets */; };
 		125503202605F1EB0031028F /* WorkoutInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1255031F2605F1EB0031028F /* WorkoutInterfaceController.swift */; };
+		125503272605FD550031028F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125503262605FD550031028F /* HealthKit.framework */; };
+		1255032A2605FD6F0031028F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125503292605FD6F0031028F /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,10 @@
 		1255030C2605F1D50031028F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1255030E2605F1D50031028F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1255031F2605F1EB0031028F /* WorkoutInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutInterfaceController.swift; sourceTree = SOURCE_ROOT; };
+		125503242605FD550031028F /* iMove.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iMove.entitlements; sourceTree = "<group>"; };
+		125503262605FD550031028F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		125503282605FD6E0031028F /* iMove WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iMove WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		125503292605FD6F0031028F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				125503272605FD550031028F /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1255032A2605FD6F0031028F /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +121,7 @@
 				125502F62605F1D40031028F /* iMove WatchKit App */,
 				125503052605F1D50031028F /* iMove WatchKit Extension */,
 				125502DF2605F1D30031028F /* Products */,
+				125503252605FD550031028F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +138,7 @@
 		125502E02605F1D30031028F /* iMove */ = {
 			isa = PBXGroup;
 			children = (
+				125503242605FD550031028F /* iMove.entitlements */,
 				125502E12605F1D30031028F /* AppDelegate.swift */,
 				125502E32605F1D30031028F /* SceneDelegate.swift */,
 				125502E52605F1D30031028F /* ViewController.swift */,
@@ -153,6 +163,7 @@
 		125503052605F1D50031028F /* iMove WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				125503282605FD6E0031028F /* iMove WatchKit Extension.entitlements */,
 				1255031F2605F1EB0031028F /* WorkoutInterfaceController.swift */,
 				125503062605F1D50031028F /* InterfaceController.swift */,
 				125503082605F1D50031028F /* ExtensionDelegate.swift */,
@@ -161,6 +172,15 @@
 				1255030E2605F1D50031028F /* Info.plist */,
 			);
 			path = "iMove WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		125503252605FD550031028F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				125503292605FD6F0031028F /* HealthKit.framework */,
+				125503262605FD550031028F /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "iMove WatchKit Extension/iMove WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X6M775UK8W;
 				INFOPLIST_FILE = "iMove WatchKit Extension/Info.plist";
@@ -491,6 +512,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "iMove WatchKit Extension/iMove WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X6M775UK8W;
 				INFOPLIST_FILE = "iMove WatchKit Extension/Info.plist";
@@ -556,6 +578,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iMove/iMove.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X6M775UK8W;
 				INFOPLIST_FILE = iMove/Info.plist;
@@ -577,6 +600,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iMove/iMove.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X6M775UK8W;
 				INFOPLIST_FILE = iMove/Info.plist;
