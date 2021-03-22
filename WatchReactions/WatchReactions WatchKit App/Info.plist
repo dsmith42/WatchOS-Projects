@@ -29,5 +29,7 @@
 	<string>app.dsmith.WatchReactions</string>
 	<key>WKWatchKitApp</key>
 	<true/>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>To record custom sounds we need access to the microphone.</string>
 </dict>
 </plist>

@@ -34,6 +34,8 @@
 		12D916262608B709008CB85C /* suspense.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12D9161C2608B709008CB85C /* suspense.mp3 */; };
 		12D9162B2608B9B6008CB85C /* TableInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9162A2608B9B6008CB85C /* TableInterfaceController.swift */; };
 		12D916302608BA23008CB85C /* SoundRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9162F2608BA23008CB85C /* SoundRow.swift */; };
+		12D916382608C091008CB85C /* CustomInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D916372608C091008CB85C /* CustomInterfaceController.swift */; };
+		12D9163D2608C2B0008CB85C /* Filemanager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D9163C2608C2B0008CB85C /* Filemanager-DocumentsDirectory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,8 @@
 		12D9161C2608B709008CB85C /* suspense.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = suspense.mp3; sourceTree = "<group>"; };
 		12D9162A2608B9B6008CB85C /* TableInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableInterfaceController.swift; sourceTree = "<group>"; };
 		12D9162F2608BA23008CB85C /* SoundRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundRow.swift; sourceTree = "<group>"; };
+		12D916372608C091008CB85C /* CustomInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInterfaceController.swift; sourceTree = "<group>"; };
+		12D9163C2608C2B0008CB85C /* Filemanager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Filemanager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +190,8 @@
 				120C57C126079FD8003977A9 /* Info.plist */,
 				12D9162A2608B9B6008CB85C /* TableInterfaceController.swift */,
 				12D9162F2608BA23008CB85C /* SoundRow.swift */,
+				12D916372608C091008CB85C /* CustomInterfaceController.swift */,
+				12D9163C2608C2B0008CB85C /* Filemanager-DocumentsDirectory.swift */,
 			);
 			path = "WatchReactions WatchKit Extension";
 			sourceTree = "<group>";
@@ -362,7 +368,9 @@
 				120C57BC26079FD7003977A9 /* ExtensionDelegate.swift in Sources */,
 				12D916302608BA23008CB85C /* SoundRow.swift in Sources */,
 				120C57BA26079FD7003977A9 /* InterfaceController.swift in Sources */,
+				12D916382608C091008CB85C /* CustomInterfaceController.swift in Sources */,
 				120C57DB2607A642003977A9 /* SoundPlaying.swift in Sources */,
+				12D9163D2608C2B0008CB85C /* Filemanager-DocumentsDirectory.swift in Sources */,
 				120C57BE26079FD7003977A9 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

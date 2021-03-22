@@ -73,10 +73,33 @@
                     </items>
                     <connections>
                         <outlet property="table" destination="yMq-K1-nPy" id="n11-BW-DhY"/>
+                        <segue destination="jEy-TF-mZR" kind="relationship" relationship="nextPage" id="SOM-GS-88u"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="304" y="-11"/>
+        </scene>
+        <!--Custom Interface Controller-->
+        <scene sceneID="6UH-lv-jHB">
+            <objects>
+                <controller id="jEy-TF-mZR" customClass="CustomInterfaceController" customModule="WatchReactions_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" height="0.5" alignment="left" title="Record" id="HEO-W0-BG2">
+                            <color key="backgroundColor" red="0.50062257051467896" green="0.16021433472633362" blue="0.087659560143947601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="recordTapped" destination="jEy-TF-mZR" id="dT8-9g-CEP"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="0.5" alignment="left" title="Play" id="loa-sz-0VO">
+                            <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="playTapped" destination="jEy-TF-mZR" id="aN6-aA-9XK"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="484" y="-11"/>
         </scene>
     </scenes>
 </document>
